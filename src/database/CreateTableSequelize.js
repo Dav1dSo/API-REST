@@ -12,6 +12,18 @@ const Alunos = ConectSequelize.define('Alunos', {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    
-
+    sobrenome: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    idade: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    }
 });
+
+export default Alunos;
