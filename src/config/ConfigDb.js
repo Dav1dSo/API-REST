@@ -1,11 +1,11 @@
-const {dotenv} = require('dotenv');
+const dotenv = require('dotenv');
 dotenv.config();
 
 module.exports = {
     dialect: 'mysql',
     host: process.env.HOST,
     port: process.env.DBPORT,
-    username: process.env.USERNAME,
+    username: 'root',
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
     define: {
@@ -16,7 +16,7 @@ module.exports = {
         updatedAt: 'updated_at',
     },
     dialectOptions: {
-        timezone: 'America/Sao-Paulo',
+        timezone: '-03:00'
     },
-    timezone: 'America/Sao_Paulo',
+    timezone: '-03:00'
 };

@@ -11,4 +11,6 @@ App.use(express.json());
 
 App.use(Router);
 
-App.listen(process.env.PORT) 
+App.listen(process.env.PORT, () => {
+    console.log(`Servidor rodando na porta ${process.env.PORT}!`)
+}) 

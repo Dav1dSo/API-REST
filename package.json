@@ -1,6 +1,10 @@
 {
   "devDependencies": {
+    "mariadb": "^3.0.2",
+    "mysql2": "^3.0.1",
     "nodemon": "^2.0.20",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2",
     "sucrase": "^3.29.0"
   },
   "name": "api-rest",
@@ -57,7 +61,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon App.js",
-    "build": "sucrase .src -d ./dist --transform imports", 
+    "build": "sucrase .src -d ./dist --transform imports",
     "start": "node dist/app"
   },
   "keywords": [],

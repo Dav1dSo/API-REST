@@ -1,5 +1,5 @@
 const HomeController = (req, res) => {
-    res.send("teste!")
+    console.log('teste')
 };
 
-export default HomeController;
+export default HomeController;  
