@@ -1,7 +1,9 @@
 import express from "express";
 import * as dotenv from 'dotenv';
-dotenv.config()
-import Router from "./src/Routes/Routes"
+dotenv.config();
+import Router from "./src/Routes/Routes";
+
+import './src/database'
 
 import { urlencoded } from "body-parser";
 
